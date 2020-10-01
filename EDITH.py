@@ -105,6 +105,12 @@ while c :
         query = query.replace("google it","").strip()
         query = query.replace(" ","+")
         re = webbrowser.open("google.com/search?q="+query)
+        
+    elif 'search it' in query:
+        speak("Sure!!!. opening web...")
+        query = query.replace("search it","").strip()
+        query = query.replace(" ","+")
+        re = webbrowser.open("google.com/search?q="+query)    
     else :
         speak("I am Not Allowed to do this ;")
         speak("Would You Like to Addd more features SO PLEASE ADD some commands")
